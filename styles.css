@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+   body {
+    background-image: linear-gradient( 109.6deg,  rgba(204,228,247,1) 11.2%, rgba(237,246,250,1) 100.2% );
+   }
+   
+  .calculator {
+    width: 280px;
+    height: 550px;
+    background: #ada996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 28px;
+    box-shadow: 0 5px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(43, 173, 156);
+  }
+  
+  .screen {
+    width: 280px;
+    height: 200px;
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: right;
+    font-size: 35px;
+    color: #0a0a0a;
+    font-family: roboto;
+    font-size: calc(12px + 2vw);
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+  }
+  
+  .buttons {
+    width: 280px;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  
+  button {
+    width: 62px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 5px;
+    color: #000000;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border: none;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+  }
+  
+  .zero {
+    width: 130px;
+    height: 50px;
+    background-color: blueviolet;
+  }
+  
+  .clear {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  }
+  
+  .gray {
+    background: #6190e8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a7bfe8, #6190e8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a7bfe8, #6190e8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  /*Style 8*/
+  /* Add these styles for the toggle button */
+  .toggler-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggler-wrapper input[type="checkbox"] {
+    display: none;
+  }
+  
+  .toggler-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #1f50d6;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggler-knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Add these styles to toggle the background color and knob position when checked */
+  .toggler-wrapper input[type="checkbox"]:checked + .toggler-slider {
+    background-color: #807777;
+  }
+  
+  .toggler-wrapper input[type="checkbox"]:checked + .toggler-slider .toggler-knob {
+    transform: translateX(20px);
+  }
+  .popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: linear-gradient( 88.7deg,  rgba(205,33,42,1) 10.6%, rgba(236,95,5,1) 90% );;
+    color: #fff;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s step-end;
+  }
+  
+  .popup.show {
+    opacity: 1;
+  }
+  
+  
+
+
